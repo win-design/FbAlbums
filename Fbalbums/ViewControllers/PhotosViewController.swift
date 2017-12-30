@@ -63,8 +63,17 @@ class PhotosViewController: UIViewController {
         selectionModeActivated = !selectionModeActivated
     }
     
-// Click button here
-    
+    @IBAction func didClickUploadButton(_ sender: Any) {
+        
+        onUploadComplition = { [weak self] success in
+            let alert = UIAlertController(title: success ? "Success" : "Error", message: success ? "Photos Uploaded successfully" : "The upload has failed", preferredStyle: .alert)
+            alert.addAction(UIAlertAction.init(title: "Ok", style: .`default`, handler: nil))
+            self?.present(alert, animated: true, completion: nil)
+        }
+        
+        FirebaseServices().uploadPhotos(selectedPhotos, uploadCompletion: onUploadComplition)
+    }
+
 }
 
 extension PhotosViewController: UICollectionViewDelegate {
