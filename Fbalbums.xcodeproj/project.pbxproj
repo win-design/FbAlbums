@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		169D6F7904B80473369F27C2 /* Pods_Fbalbums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F8C997CA693DAAB1EAE817 /* Pods_Fbalbums.framework */; };
 		CF02BB061FF6D70A00C7AC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02BB051FF6D70A00C7AC3B /* AppDelegate.swift */; };
-		CF02BB081FF6D70A00C7AC3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02BB071FF6D70A00C7AC3B /* ViewController.swift */; };
 		CF02BB0B1FF6D70A00C7AC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF02BB091FF6D70A00C7AC3B /* Main.storyboard */; };
-		CF02BB0D1FF6D70A00C7AC3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF02BB0C1FF6D70A00C7AC3B /* Assets.xcassets */; };
-		CF02BB101FF6D70A00C7AC3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF02BB0E1FF6D70A00C7AC3B /* LaunchScreen.storyboard */; };
+		CF9D57081FF717D4005D0FC5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF9D57061FF717D4005D0FC5 /* Info.plist */; };
+		CF9D57091FF717D4005D0FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9D57071FF717D4005D0FC5 /* Assets.xcassets */; };
+		CF9D570B1FF717ED005D0FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9D570A1FF717ED005D0FC5 /* LaunchScreen.storyboard */; };
+		CF9D570D1FF718C2005D0FC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D570C1FF718C2005D0FC5 /* LoginViewController.swift */; };
+		CF9D570F1FF718EE005D0FC5 /* FacebookServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D570E1FF718EE005D0FC5 /* FacebookServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,12 @@
 		C5F8C997CA693DAAB1EAE817 /* Pods_Fbalbums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fbalbums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF02BB021FF6D70A00C7AC3B /* Fbalbums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fbalbums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF02BB051FF6D70A00C7AC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF02BB071FF6D70A00C7AC3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF02BB0A1FF6D70A00C7AC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CF02BB0C1FF6D70A00C7AC3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF02BB0F1FF6D70A00C7AC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CF02BB111FF6D70A00C7AC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9D57061FF717D4005D0FC5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9D57071FF717D4005D0FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF9D570A1FF717ED005D0FC5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF9D570C1FF718C2005D0FC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CF9D570E1FF718EE005D0FC5 /* FacebookServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +73,23 @@
 		CF02BB041FF6D70A00C7AC3B /* Fbalbums */ = {
 			isa = PBXGroup;
 			children = (
-				CF02BB051FF6D70A00C7AC3B /* AppDelegate.swift */,
-				CF02BB071FF6D70A00C7AC3B /* ViewController.swift */,
+				CF9D57051FF71587005D0FC5 /* Additional files */,
 				CF02BB091FF6D70A00C7AC3B /* Main.storyboard */,
-				CF02BB0C1FF6D70A00C7AC3B /* Assets.xcassets */,
-				CF02BB0E1FF6D70A00C7AC3B /* LaunchScreen.storyboard */,
-				CF02BB111FF6D70A00C7AC3B /* Info.plist */,
+				CF9D570C1FF718C2005D0FC5 /* LoginViewController.swift */,
+				CF9D570E1FF718EE005D0FC5 /* FacebookServices.swift */,
 			);
 			path = Fbalbums;
+			sourceTree = "<group>";
+		};
+		CF9D57051FF71587005D0FC5 /* Additional files */ = {
+			isa = PBXGroup;
+			children = (
+				CF9D570A1FF717ED005D0FC5 /* LaunchScreen.storyboard */,
+				CF9D57071FF717D4005D0FC5 /* Assets.xcassets */,
+				CF9D57061FF717D4005D0FC5 /* Info.plist */,
+				CF02BB051FF6D70A00C7AC3B /* AppDelegate.swift */,
+			);
+			path = "Additional files";
 			sourceTree = "<group>";
 		};
 		ED62DD0659945E33AC3BB476 /* Frameworks */ = {
@@ -150,9 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF02BB101FF6D70A00C7AC3B /* LaunchScreen.storyboard in Resources */,
-				CF02BB0D1FF6D70A00C7AC3B /* Assets.xcassets in Resources */,
+				CF9D57081FF717D4005D0FC5 /* Info.plist in Resources */,
+				CF9D570B1FF717ED005D0FC5 /* LaunchScreen.storyboard in Resources */,
 				CF02BB0B1FF6D70A00C7AC3B /* Main.storyboard in Resources */,
+				CF9D57091FF717D4005D0FC5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF02BB081FF6D70A00C7AC3B /* ViewController.swift in Sources */,
+				CF9D570F1FF718EE005D0FC5 /* FacebookServices.swift in Sources */,
+				CF9D570D1FF718C2005D0FC5 /* LoginViewController.swift in Sources */,
 				CF02BB061FF6D70A00C7AC3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,14 +261,6 @@
 				CF02BB0A1FF6D70A00C7AC3B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CF02BB0E1FF6D70A00C7AC3B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF02BB0F1FF6D70A00C7AC3B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -374,7 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBC8ZCE7HL;
-				INFOPLIST_FILE = Fbalbums/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Fbalbums/Additional files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Fbalbums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LBC8ZCE7HL;
-				INFOPLIST_FILE = Fbalbums/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Fbalbums/Additional files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Fbalbums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
