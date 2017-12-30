@@ -62,6 +62,37 @@ struct FacebookServices {
             })
         success(nil)
     }
-
+    
+    func getPhotos(albumId: String, success: @escaping (_ albums: [Photo]?) -> ()) {
+        
+        
+        GraphRequest(graphPath: "/\(albumId)/photos")
+            .start({ response, result in
+                
+                switch result {
+                case .success(let response):
+                    print(response)
+                    
+                    if let parsedData = response.dictionaryValue {
+                        
+                        let photosDictionay = parsedData["data"]! as! [[String : Any]]
+                        
+                        var photos = [Photo]()
+                        
+                        for photoDictionay in photosDictionay {
+                            
+                            let photo = Photo(id: photoDictionay["id"] as! String)
+                            photos.append(photo)
+                        }
+                        
+                        success(photos)
+                    }
+                    
+                default: break
+                }
+                
+            })
+        success(nil)
+    }
+    
 }
-

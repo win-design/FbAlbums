@@ -30,6 +30,14 @@ class AlbumsViewController: UIViewController {
         FacebookServices().getAlbums(success: successClosure!)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showPhotos" {
+            let photosViewController = segue.destination as! PhotosViewController
+            photosViewController.album = sender as! Photo
+        }
+    }
+
 }
 
 extension AlbumsViewController: UICollectionViewDelegate {

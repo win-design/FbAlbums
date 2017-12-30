@@ -18,6 +18,8 @@
 		CF9D57181FF71CE7005D0FC5 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D57171FF71CE7005D0FC5 /* Photo.swift */; };
 		CF9D571A1FF71D0F005D0FC5 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D57191FF71D0F005D0FC5 /* AlbumsViewController.swift */; };
 		CF9D571D1FF71D75005D0FC5 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D571C1FF71D75005D0FC5 /* PhotoCell.swift */; };
+		CF9D571F1FF7B74A005D0FC5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D571E1FF7B74A005D0FC5 /* PhotosViewController.swift */; };
+		CF9D57211FF7B7C7005D0FC5 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D57201FF7B7C7005D0FC5 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		CF9D57171FF71CE7005D0FC5 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		CF9D57191FF71D0F005D0FC5 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		CF9D571C1FF71D75005D0FC5 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		CF9D571E1FF7B74A005D0FC5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		CF9D57201FF7B7C7005D0FC5 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				CF9D571B1FF71D66005D0FC5 /* Cell */,
 				CF9D570C1FF718C2005D0FC5 /* LoginViewController.swift */,
 				CF9D57191FF71D0F005D0FC5 /* AlbumsViewController.swift */,
+				CF9D571E1FF7B74A005D0FC5 /* PhotosViewController.swift */,
+				CF9D57201FF7B7C7005D0FC5 /* PhotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -291,6 +297,8 @@
 				CF9D57141FF71C90005D0FC5 /* FacebookServices.swift in Sources */,
 				CF9D570D1FF718C2005D0FC5 /* LoginViewController.swift in Sources */,
 				CF02BB061FF6D70A00C7AC3B /* AppDelegate.swift in Sources */,
+				CF9D571F1FF7B74A005D0FC5 /* PhotosViewController.swift in Sources */,
+				CF9D57211FF7B7C7005D0FC5 /* PhotoViewController.swift in Sources */,
 				CF9D571D1FF71D75005D0FC5 /* PhotoCell.swift in Sources */,
 				CF9D571A1FF71D0F005D0FC5 /* AlbumsViewController.swift in Sources */,
 			);
