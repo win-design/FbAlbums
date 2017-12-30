@@ -20,7 +20,7 @@ class PhotosViewController: UIViewController {
     var photos = [Photo]()
     var selectedPhotos = [Photo]() {
         didSet {
-            collectionView.visibleSupplementaryViews(ofKind: UICollectionElementKindSectionFooter).first?.isHidden = selectedPhotos.count <= 0
+            collectionView.visibleSupplementaryViews(ofKind: UICollectionElementKindSectionHeader).first?.isHidden = selectedPhotos.count <= 0
         }
     }
     var successClosure: ((_ albums: [Photo]?) -> ())?
@@ -118,10 +118,23 @@ extension PhotosViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        if kind == UICollectionElementKindSectionFooter {
-            let footer = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionFooter, withReuseIdentifier: "footer", for: indexPath)
-            return footer
+        if kind == UICollectionElementKindSectionHeader {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header", for: indexPath)
+            return header
         }
         return UICollectionReusableView()
     }
+}
+
+extension PhotosViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let padding: CGFloat =  40
+        let collectionViewSize = collectionView.frame.size.width - padding
+        
+        return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
+        
+    }
+    
 }

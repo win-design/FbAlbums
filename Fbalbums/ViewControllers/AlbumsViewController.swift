@@ -48,6 +48,7 @@ extension AlbumsViewController: UICollectionViewDelegate {
         
         performSegue(withIdentifier: "showPhotos", sender: album)
     }
+    
 }
 
 extension AlbumsViewController: UICollectionViewDataSource {
@@ -66,5 +67,18 @@ extension AlbumsViewController: UICollectionViewDataSource {
         cell.photo.sd_setImage(with: album.imageUrl)
         return cell
     }
+}
+
+extension AlbumsViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let padding: CGFloat =  40
+        let collectionViewSize = collectionView.frame.size.width - padding
+        
+        return CGSize(width: collectionViewSize/2, height: collectionViewSize/2)
+        
+    }
+
 }
 
