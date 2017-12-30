@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
         onLoginFinished = { [weak self] token in
             
             if let _ = token {
-                self?.performSegue(withIdentifier: "showAlbums", sender: nil)
+                self?.performSegue(withIdentifier: "presentAlbumsScreen", sender: nil)
             } else {
                 let alert = UIAlertController(title: "Error", message: "Login Failed", preferredStyle: .alert)
                 alert.addAction(UIAlertAction.init(title: "Ok", style: .`default`, handler: nil))
