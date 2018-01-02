@@ -14,3 +14,6 @@ Used pods
 Usage
 -------------
 Clone and run the app.
+
+![](https://github.com/win-design/FbAlbums/raw/master/App.gif)
+

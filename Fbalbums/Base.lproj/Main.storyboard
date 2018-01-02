@@ -99,7 +99,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Albums List" id="V4R-lL-Det">
-                        <barButtonItem key="rightBarButtonItem" image="grid" id="cra-rN-H47">
+                        <barButtonItem key="rightBarButtonItem" title="Grid" id="cra-rN-H47">
                             <connections>
                                 <action selector="didClickSwitchButton:" destination="UVI-I9-Chh" id="00K-wg-eKB"/>
                             </connections>
@@ -181,7 +181,7 @@
                         <viewLayoutGuide key="safeArea" id="Jab-MI-e1g"/>
                     </view>
                     <navigationItem key="navigationItem" title="Albums" id="PyT-uN-zBX">
-                        <barButtonItem key="rightBarButtonItem" image="list" id="Yx2-GS-hwQ">
+                        <barButtonItem key="rightBarButtonItem" title="List" id="Yx2-GS-hwQ">
                             <connections>
                                 <segue destination="nMg-fQ-HRp" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="JzM-Kj-qc4"/>
                             </connections>
@@ -416,8 +416,6 @@
     </scenes>
     <resources>
         <image name="checkmark" width="128" height="128"/>
-        <image name="grid" width="27" height="25"/>
-        <image name="list" width="29" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="K2O-t4-FWX"/>
