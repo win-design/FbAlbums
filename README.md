@@ -14,3 +14,5 @@ Used pods
 Usage
 -------------
 Clone and run the app.
+
+![](https://i.imgur.com/tDUsfAq.gif)
